@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+<!--
+		<script src="aframe/aframe.min.js"></script>
+		<script src="../aframe/aframe.min.js"></script>
+		<script src="../ar/aframe-ar.js"></script>
+-->
+		<script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+		<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+
+	<head>
+	<body>
+		<a-scene embedded arjs = 'trackingMethod: best;'>
+			<a-anchor hit-testing-enabled='true'>
+				<a-marker preset="hiro">
+					<a-scene>
+						<a-torus position="0 0.5 0" color="green" radius="0.5"></a-torus>
+						<a-plane width="3.5" height="3.5" rotation="-55 0 0" position="0 -1 0" color="purple"></a-plane>
+						<a-cylinder color="yellow" height="2" radius="0.05" position="0 0 0"></a-cylinder>
+						<a-cylinder color="blue" height="2" radius="0.05" position="1 0 0"></a-cylinder>
+						<a-torus-knot color="orange" radius="0.5" position="1 0.5 0"></a-torus-knot>
+						<a-plane src="https://raw.githubusercontent.com/aframevr/sampleassets/master/assets/images/uvgrid/UV_Grid_Sm.jpg т" width="2.5" height="1.5" position="0 1 -1"></a-plane>
+						<a-text font="times-msdf.json" negate="false" value="Чуркіна Карина, група ТНІм-22" color="black" width="3" position="-1 0.5 -1"></a-text>
+						<a-torus position="-2 1 -5" color="green" radius="1.2" animation="property: components.material.material.color; type: color; from: green; to: red; loop: true; dur: 10000"> </a-torus>
+						<a-plane src="758px-Canestra_di_frutta_(Caravaggio).jpg" width="7" height="7" rotation="-55 0 0" position="-2 -2 -5" color="purple"></a-plane>
+					</a-scene>
+				</a-marker>
+				<a-entity camera></a-entity> 
+			 </a-anchor>
+		</a-scene>
+	</body>
+</html>
