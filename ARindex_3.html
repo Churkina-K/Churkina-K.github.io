@@ -11,8 +11,8 @@
 
 	<head>
 	<body>
-		<a-scene embedded arjs = 'trackingMethod: best'>
-			<a-anchor hit-testing-enabled='true'>
+		<a-scene embedded arjs> <!--  = 'trackingMethod: best'
+			<a-anchor hit-testing-enabled='true'>-->
 				<a-marker preset="hiro">
 					<!-- <a-scene> -->
 						<a-torus position="0 0.5 0" color="green" radius="0.5"></a-torus>
@@ -29,8 +29,8 @@
 					 <!-- </a-scene> -->
 				</a-marker>
 				<a-camera-static/>
-				<!-- <a-entity camera></a-entity> -->
-			</a-anchor>
+				<!-- <a-entity camera></a-entity>
+			</a-anchor> -->
 		</a-scene>
 	</body>
 </html>
