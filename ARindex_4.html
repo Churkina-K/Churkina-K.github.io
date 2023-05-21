@@ -6,31 +6,18 @@
 	<head>
 	<body>
 		<a-scene embedded arjs= 'trackingMethod: best'>
-			<!-- <a-anchor hit-testing-enabled='true'> -->
-				<a-marker preset="hiro" id='marker-hiro' registerevents>
-					<a-box position='0 0.5 0' material='color: red;' jump></a-box>
-				</a-marker>
-				<a-marker preset="kanji" id='marker-kanji' registerevents>
-					<a-entity geometry="primitive: sphere; radius: 0.5" material="color: white; shader: flat; src: UV_Grid_Sm.jpg" position="0 0 -1"></a-entity>
-				</a-marker>
-				<a-marker type='barcode' value='6' id='marker-barcode-7' registerevents>
-					<a-sphere position='0 0.5 0' radius="0.5" material='color: green;' jump></a-sphere>
-				</a-marker>
 
-				<!-- <a-marker preset="hiro">
-					<a-torus position="0 0.5 0" color="green" radius="0.5"></a-torus>
-					<a-plane width="3.5" height="3.5" rotation="-55 0 0" position="0 -1 0" color="purple"></a-plane>
-					<a-cylinder color="yellow" height="2" radius="0.05" position="0 0 0"></a-cylinder>
-					<a-cylinder color="blue" height="2" radius="0.05" position="1 0 0"></a-cylinder>
-					<a-torus-knot color="orange" radius="0.5" position="1 0.5 0"></a-torus-knot>
-					<a-plane src="UV_Grid_Sm.jpg" width="2.5" height="1.5" position="0 1 -1"></a-plane>
-					<a-text font="times-msdf.json" negate="false" value="Чуркіна Карина, група ТНІм-22" color="black" width="3" position="-1 0.5 -1"></a-text>
-					<a-torus position="0 0.5 0" color="green" radius="0.5" animation="property: components.material.material.color; type: color; from: green; to: red; loop: true; dur: 10000"> </a-torus>
-					<a-plane src="758px-Canestra_di_frutta_(Caravaggio).jpg" width="3.5" height="3.5" rotation="-55 0 0" position="0 -1 0" color="purple"></a-plane>
-				</a-marker>
-				<a-camera-static/> -->
-				<a-entity camera></a-entity>
-			<!-- </a-anchor> -->
+			<a-marker preset="hiro" id='marker-hiro' registerevents>
+				<a-box position='0 0.5 0' material='color: red;' jump></a-box>
+			</a-marker>
+			<a-marker preset="kanji" id='marker-kanji' registerevents>
+				<a-entity geometry="primitive: sphere; radius: 0.5" material="color: white; shader: flat; src: UV_Grid_Sm.jpg" position="0 0 -1"></a-entity>
+			</a-marker>
+			<a-marker type='pattern' url='pattern-K.pattt'> id='marker-pattern-K' registerevents>
+				<a-sphere position='0 0.5 0' radius="0.5" material='color: green;' jump></a-sphere>
+			</a-marker>
+
+			<a-entity camera></a-entity>
 		</a-scene>
 	</body>
 </html>
